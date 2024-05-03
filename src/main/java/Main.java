@@ -14,12 +14,13 @@ public class Main {
     System.out.print("Ingrese un número: ");
     num = scanner.nextDouble();
 
-    if (num != 0) {
-      recipNum = 1 / num;
-      System.out.println("El recíproco del número es: " + recipNum);
-    } else {
-      System.out.println("El numero no puede ser cero");
+    while (num == 0) {
+      System.out.print("El numero no puede ser cero, ingrese nuevamente: ");
+      num = scanner.nextDouble();
     }
+    recipNum = 1 / num;
+    System.out.println("El recíproco del número es: " + recipNum);
+
     scanner.close();
   }
 }
