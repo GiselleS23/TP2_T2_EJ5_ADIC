@@ -8,18 +8,21 @@ public class Main {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
-    double num;
+    int num;
     double recipNum;
 
     System.out.print("Ingrese un número: ");
-    num = scanner.nextDouble();
+    num = scanner.nextInt();
 
     while (num == 0) {
       System.out.print("El numero no puede ser cero, ingrese nuevamente: ");
-      num = scanner.nextDouble();
+      num = scanner.nextInt();
     }
-    recipNum = 1 / num;
-    System.out.println("El recíproco del número es: " + recipNum);
+
+    
+    recipNum = (1.0 / num); // Convierto 1 a double para que la división sea decimal
+    System.out.println("El recíproco del número es: 1/" + num);
+    
 
     scanner.close();
   }
