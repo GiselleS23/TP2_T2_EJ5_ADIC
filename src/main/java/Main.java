@@ -20,7 +20,8 @@ public class Main {
     }
 
     recipNum = (1.0 / num); // Convierto 1 a double para que la división sea decimal
-    System.out.println("El recíproco del número es:" + recipNum);
+    System.out.println("El recíproco del número es:" + recipNum + " y expresado matematicamente es 1/" + num);
+
     scanner.close();
   }
 }
