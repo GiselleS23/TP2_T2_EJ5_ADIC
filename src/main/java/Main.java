@@ -19,11 +19,8 @@ public class Main {
       num = scanner.nextInt();
     }
 
-    
     recipNum = (1.0 / num); // Convierto 1 a double para que la división sea decimal
-    System.out.println("El recíproco del número es: 1/" + num);
-    
-
+    System.out.println("El recíproco del número es:" + recipNum);
     scanner.close();
   }
 }
